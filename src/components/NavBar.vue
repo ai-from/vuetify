@@ -2,8 +2,11 @@
   <nav>
 
     <v-snackbar v-model="snackbar" :timeout="4000" top color="success">
-      <span class="mr-2">Awesome! You added a new project</span>
-      <v-btn text color="white" @click="snackbar = false">Close</v-btn>
+      <v-row class="px-4">
+        <span class="d-flex align-center">Success!</span>
+        <v-spacer></v-spacer>
+        <v-btn text class="white--text font-weight-light" @click="snackbar = false">Close</v-btn>
+      </v-row>
     </v-snackbar>
 
     <v-toolbar flat class="transparent">
